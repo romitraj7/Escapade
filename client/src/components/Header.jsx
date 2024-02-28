@@ -1,44 +1,83 @@
-import React, { useState } from 'react';
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import Offcanvas from 'react-bootstrap/Offcanvas';
+import React from "react";
+import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
 
-function Header() {
-  const [showOffcanvas, setShowOffcanvas] = useState(false);
 
-  const handleOffcanvasToggle = () => setShowOffcanvas(!showOffcanvas);
+export default function Header() {
+  const [isMenuOpen, setIsMenuOpen] = React.useState(false);
+
+  const menuItems = [
+    "Home",
+    "Events",
+    "TimeLine",
+    "Sponsors",
+    "FAQ's",
+  ];
 
   return (
-    <>
-      <Navbar expand="lg" className=" mb-3 bg-gray-400">
-        <Container fluid>
-          <Navbar.Brand href="/" className='' >Escapade</Navbar.Brand>
-          <Navbar.Toggle aria-controls="offcanvasNavbar" />
-          <Navbar.Collapse id="navbarNav" className="justify-content-end">
-            <Nav className='mx-auto'>
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="events">Events</Nav.Link>
-              <Nav.Link href="sponsors">Sponsors</Nav.Link>
-            </Nav>
-          </Navbar.Collapse>
-        </Container>
-        
-      </Navbar>
-      <Offcanvas show={showOffcanvas} onHide={() => setShowOffcanvas(false)} placement="end">
-        <Offcanvas.Header closeButton>
-          <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-        </Offcanvas.Header>
-        <Offcanvas.Body>
-          <Nav defaultActiveKey="/" className="flex-column">
-              <Nav.Link href="/">Home</Nav.Link>
-              <Nav.Link href="events">Events</Nav.Link>
-              <Nav.Link href="sponsors">Sponsors</Nav.Link>
-          </Nav>
-        </Offcanvas.Body>
-      </Offcanvas>
-    </>
+    <Navbar
+      isBordered
+      isMenuOpen={isMenuOpen}
+      onMenuOpenChange={setIsMenuOpen}
+    >
+     
+      <NavbarContent className="sm:hidden " justify="start">
+        <NavbarBrand className="mt-2 text-2xl"> 
+          <p className="font-bold mt-3">ESCAPADE</p>
+        </NavbarBrand>
+      </NavbarContent>
+
+      <NavbarContent className="sm:hidden" justify="end">
+        <NavbarMenuToggle aria-label={isMenuOpen ? "Close menu" : "Open menu"} />
+      </NavbarContent>
+
+      <NavbarContent className="hidden sm:flex gap-4" justify="start">
+        <NavbarBrand className="mt-4 text-4xl">
+          <p className="font-bold">ESCAPADE</p>
+        </NavbarBrand>
+        <NavbarItem>
+          <Link color="foreground" href="/">
+            Home
+          </Link>
+        </NavbarItem>
+        <NavbarItem isActive>
+          <Link href="#event" aria-current="page">
+            Events
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            Timeline
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            Sponsors
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#">
+            FAQ'S
+          </Link>
+        </NavbarItem>
+      </NavbarContent>
+
+
+      <NavbarMenu>
+        {menuItems.map((item, index) => (
+          <NavbarMenuItem key={`${item}-${index}`}>
+            <Link
+              className="w-full"
+              color={
+                index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
+              }
+              href="#"
+              size="lg"
+            >
+              {item}
+            </Link>
+          </NavbarMenuItem>
+        ))}
+      </NavbarMenu>
+    </Navbar>
   );
 }
-
-export default Header;
