@@ -6,32 +6,26 @@ import HeadingLogo from '../components/HeadingLogo.jsx';
 import Timeline from '../components/Timeline.jsx';
 import RegisterHere from '../components/RegisterHere.jsx';
 import FAQ from '../components/FAQ.jsx';
+import Header from '../components/Header.jsx';
 
 
 export default function Home() {
   return (
     <>
+    <Header/>
     <div className='flex flex-col items-center'>
       <div className='max-w-screen-xl mx-auto px-4 w-full'>
         <div className='flex flex-col md:flex-row justify-between items-center'>
-          {/* <div className='flex flex-col mb-2 md:mb-0 md:mr-4 w-full md:w-auto'>
-            <div>
-              <TypeWriter className="text-sm md:text-base" />
-            </div>
-            <div className='p-2 text-sm md:text-base'>
-              Welcome to escapde
-            </div>
-          </div> */}
           <HeadingLogo/>
         </div>
       </div>
       <div>
         <div className="flex justify-center items-center">
-            <h3 className="font-bold mt-4 mb-4">Glimpses Of Escapade 2.0</h3>
+            <h3 className="font-bold mt-4 mb-4">Glimpses Of Escapade 2K23</h3>
         </div>
         <CarouselComponent />
       </div>
-      <div className='event'>
+      <div id='Events' className='p-12'>
         <div className="flex justify-center items-center">
             <h3 className="font-bold mt-4 mb-4">EVENTS</h3>
         </div>
@@ -44,11 +38,16 @@ export default function Home() {
          <RegisterHere/>
         </div>
       </div>
-      <div>
+      <div id='TimeLine' className='p-12'>
       <Timeline/>
       </div>
       </div>
-      <div> 
+      <div id='Sponsors' className='p-12'>
+      <div className="flex justify-center items-center">
+            <h3 className="font-bold mt-4 mb-4">SPONSORS</h3>
+        </div>
+      </div>
+      <div id="FAQ's" className='p-12'> 
         <FAQ/>
       </div>
       </>

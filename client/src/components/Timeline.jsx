@@ -5,29 +5,29 @@ const Timeline = () => {
     title: "3rd APRIL",
     cardTitle: "Register",
     url: "http://www.history.com",
-    cardSubtitle:"Men of the British Expeditionary Force (BEF) wade out to..",
-    cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
+    cardSubtitle:"",
+    cardDetailedText: "Register before date to be successfully registered in EScapade",
 
   },
   {
-    title: "May 1940",
+    title: "9:30 Am",
     cardTitle: "IQ ODYSSEY",
-    url: "http://www.history.com",
+    url: "",
     cardSubtitle:"1st Round",
-    cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
+    cardDetailedText: "1st Round Of Escapade",
   },{
-    title: "May 1940",
+    title: "12 Noon",
     cardTitle: "QUIZ",
-    url: "http://www.history.com",
+    url: "",
     cardSubtitle:"2nd Round",
-    cardDetailedText: "Event Details to know more click on the link..",
+    cardDetailedText: "2nd Round Of Escapade",
 
   },{
-    title: "May 1940",
+    title: "3PM",
     cardTitle: "ESCAPADE",
-    url: "http://www.history.com",
+    url: "",
     cardSubtitle:"3rd Round",
-    cardDetailedText: "Men of the British Expeditionary Force (BEF) wade out to..",
+    cardDetailedText: "Final Round of Escapade",
 
   }];
 

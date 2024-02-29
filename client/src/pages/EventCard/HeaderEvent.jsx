@@ -2,7 +2,7 @@ import React from "react";
 import {Navbar, NavbarBrand, NavbarMenuToggle, NavbarMenuItem, NavbarMenu, NavbarContent, NavbarItem, Link, Button} from "@nextui-org/react";
 
 
-export default function Header() {
+export default function HeaderEvent() {
   const [isMenuOpen, setIsMenuOpen] = React.useState(false);
 
   const menuItems = [
@@ -40,22 +40,22 @@ export default function Header() {
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#Events" aria-current="page">
+          <Link href="/#Events" aria-current="page">
             Events
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#TimeLine">
+          <Link color="foreground" href="/#TimeLine">
             Timeline
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#Sponsors">
+          <Link color="foreground" href="/#Sponsors">
             Sponsors
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#FAQ's">
+          <Link color="foreground" href="/#FAQ's">
             FAQ'S
           </Link>
         </NavbarItem>
@@ -71,7 +71,7 @@ export default function Header() {
               color={
                 index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
-              href={`#${item}`}
+              href={`/#${item}`}
               size="lg"
             >
               {item}

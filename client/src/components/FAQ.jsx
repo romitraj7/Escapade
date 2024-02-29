@@ -9,13 +9,13 @@ export default function FAQ() {
             <h3 className="font-bold mt-4 mb-4">Frequently Asked Questions?</h3>
         </div>
         <Accordion variant="splitted" className='p-2 flex flex-col gap-1 max-w-[500px]'>
-      <AccordionItem key="1" aria-label="Accordion 1" title="Accordion 1">
+      <AccordionItem key="1" aria-label="Accordion 1" title="Question 1">
         {defaultContent}
       </AccordionItem>
-      <AccordionItem key="2" aria-label="Accordion 2" title="Accordion 2">
+      <AccordionItem key="2" aria-label="Accordion 2" title="Question 2">
         {defaultContent}
       </AccordionItem>
-      <AccordionItem key="3" aria-label="Accordion 3" title="Accordion 3">
+      <AccordionItem key="3" aria-label="Accordion 3" title="Question 3">
         {defaultContent}
       </AccordionItem>
         </Accordion>

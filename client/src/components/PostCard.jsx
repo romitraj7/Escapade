@@ -43,7 +43,7 @@ export default function PostCard() {
         </div>
       </div>
       <div className='group relative w-full border border-teal-500 hover:border-2 h-[320px] overflow-hidden rounded-lg sm:w-[380px] md:w-[280px] lg:w-[380px] transition-all'>
-        <Link to={''}>
+        <Link to={'/events'}>
           <img
             src={download}
             alt='post cover'
