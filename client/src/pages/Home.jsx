@@ -38,9 +38,9 @@ export default function Home() {
          <RegisterHere/>
         </div>
       </div>
-      <div id='TimeLine' className='p-12'>
+      {/* <div id='TimeLine' className='p-12'>
       <Timeline/>
-      </div>
+      </div> */}
       </div>
       <div id='Sponsors' className='p-12'>
         <div className="flex justify-center items-center">
