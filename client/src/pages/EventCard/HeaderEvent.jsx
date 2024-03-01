@@ -62,15 +62,12 @@ export default function HeaderEvent() {
       </NavbarContent>
 
 
-      <NavbarMenu>
+      <NavbarMenu className="flex items-center h-50">
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem className='mt-3' key={`${item}-${index}`}>
             
             <Link
               className="w-full"
-              color={
-                index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
               href={(item === 'Home' ?'/': `#${item}`)}
               size="lg"
             >

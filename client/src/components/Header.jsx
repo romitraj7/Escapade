@@ -8,7 +8,6 @@ export default function Header() {
   const menuItems = [
     "Home",
     "Events",
-    "TimeLine",
     "Sponsors",
     "FAQ's",
   ];
@@ -44,11 +43,11 @@ export default function Header() {
             Events
           </Link>
         </NavbarItem>
-        <NavbarItem>
+        {/* <NavbarItem>
           <Link color="foreground" href="#TimeLine">
             Timeline
           </Link>
-        </NavbarItem>
+        </NavbarItem> */}
         <NavbarItem>
           <Link color="foreground" href="#Sponsors">
             Sponsors
@@ -62,16 +61,13 @@ export default function Header() {
       </NavbarContent>
 
 
-      <NavbarMenu>
+      <NavbarMenu className="flex items-center h-50">
         {menuItems.map((item, index) => (
-          <NavbarMenuItem key={`${item}-${index}`}>
+          <NavbarMenuItem className="mt-3 text-2xl " key={`${item}-${index}`}>
             
             <Link
-              className="w-full"
-              color={
-                index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
-              }
-              href={`#${item}`}
+              className="w-100px "
+              href={(item === 'Home' ?'/': `#${item}`)}
               size="lg"
             >
               {item}
