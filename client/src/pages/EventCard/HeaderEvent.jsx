@@ -7,9 +7,9 @@ export default function HeaderEvent() {
 
   const menuItems = [
     "Home",
-    "Events",
-    "TimeLine",
-    "Sponsors",
+    "Rounds",
+    "Prizes",
+    "Contact Us",
     "FAQ's",
   ];
     
@@ -39,23 +39,23 @@ export default function HeaderEvent() {
             Home
           </Link>
         </NavbarItem>
-        <NavbarItem isActive>
-          <Link href="/#Events" aria-current="page">
-            Events
+        <NavbarItem>
+          <Link href="#Rounds" aria-current="page">
+            Rounds
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/#TimeLine">
-            Timeline
+          <Link color="foreground" href="#Prizes">
+            Prizes
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/#Sponsors">
-            Sponsors
+          <Link color="foreground" href="#Contact Us">
+           Contact Us
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="/#FAQ's">
+          <Link color="foreground" href="#FAQ's">
             FAQ'S
           </Link>
         </NavbarItem>
@@ -71,7 +71,7 @@ export default function HeaderEvent() {
               color={
                 index === 2 ? "warning" : index === menuItems.length - 1 ? "danger" : "foreground"
               }
-              href={`/#${item}`}
+              href={(item === 'Home' ?'/': `#${item}`)}
               size="lg"
             >
               {item}

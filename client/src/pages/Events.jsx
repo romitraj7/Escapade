@@ -2,6 +2,8 @@ import React, { useRef, useEffect } from 'react';
 import download from '../images/download.png';
 import { EventCard } from './EventCard/EventCard';
 import HeaderEvent from './EventCard/HeaderEvent';
+import FAQ from '../components/FAQ';
+import RegisterHere from '../components/RegisterHere';
 
 export default function Events() {
   const roundRefs = [useRef(), useRef(), useRef()];
@@ -26,11 +28,11 @@ export default function Events() {
     <>
       <HeaderEvent/>
       <div className='flex justify-center mt-4 mb-4'>
-      <h1>Escapade Rounds</h1>
+      <h1 id='Rounds' className='p-16'>Escapade Rounds</h1>
       </div>
       <div>
-      <div ref={roundRefs[0]} className='flex justify-center items-center h-screen'>
-      <EventCard image={download} title={'Round 1 -IQ ODYSSEY'} content={<ol>
+      <div id='Rounds' ref={roundRefs[0]} className='flex justify-center items-center h-screen'>
+      <EventCard  image={download} title={'Round 1 -IQ ODYSSEY'} content={<ol>
         <li>1. Each team will be given 60 Questions to solve in x minutes. The questions will be a mix of aptitude and  programming. </li>
         <li>
          2.Top x teams will go to the next round.
@@ -54,7 +56,22 @@ export default function Events() {
         <li>2.Teams must search and find the final clue to win the round..</li>
       </ul>}/>
       </div>
-
+      <div className='flex justify-center mt-4  '>
+        <RegisterHere />
+      </div>
+    </div>
+    <div id='Prizes' className='p-16'>
+    <div className="flex justify-center items-center">
+            <h3 className="font-bold mt-4 mb-4">Prizes</h3>
+        </div>
+    </div>
+    <div id='Contact Us' className='p-16'>
+    <div className="flex justify-center items-center">
+            <h3 className="font-bold mt-4 mb-4">Contact Us</h3>
+        </div>
+    </div>
+    <div id="FAQ's">
+    <FAQ/>
     </div>
     </>
   );

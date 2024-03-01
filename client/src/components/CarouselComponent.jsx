@@ -1,7 +1,13 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel';
-import download from '../../src/images/download.png'
-
+import glimpses1 from '../images/glimpses1.jpeg'
+import glimpses2 from '../images/glimpses2.jpeg'
+import glimpses3 from '../images/glimpses3.jpeg'
+import glimpses4 from '../images/glimpses4.jpeg'
+import glimpses5 from '../images/glimpses5.jpeg'
+import glimpses6 from '../images/glimpses6.jpeg'
+import glimpses7 from '../images/glimpses7.jpeg'
+import glimpses8 from '../images/glimpses8.jpeg'
 export default function CarouselComponent() {
   return (
     <div>
@@ -10,36 +16,57 @@ export default function CarouselComponent() {
       <img
         style={{height:'50vh'}} 
         className=' w-full'
-        src={download}
+        src={glimpses1}
         alt='' />
-        <Carousel.Caption>
-          <h3>First slide label</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
       <img 
         style={{height:'50vh'}}
         className=' w-100 h'
-        src={download}
+        src={glimpses2}
         alt='' />
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <img 
         style={{height:'50vh'}}
         className=' w-100'
-        src={download}
+        src={glimpses3}
         alt='' />
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item>
+        <img 
+        style={{height:'50vh'}}
+        className=' w-100'
+        src={glimpses4}
+        alt='' />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img 
+        style={{height:'50vh'}}
+        className=' w-100'
+        src={glimpses5}
+        alt='' />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img 
+        style={{height:'50vh'}}
+        className=' w-100'
+        src={glimpses6}
+        alt='' />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img 
+        style={{height:'50vh'}}
+        className=' w-100'
+        src={glimpses7}
+        alt='' />
+      </Carousel.Item>
+      <Carousel.Item>
+        <img 
+        style={{height:'50vh'}}
+        className=' w-100'
+        src={glimpses8}
+        alt='' />
       </Carousel.Item>
     </Carousel>
     </div>

@@ -1,12 +1,12 @@
 import React from 'react';
 import CarouselComponent from '../components/CarouselComponent.jsx';
-import download from '../images/download.png';
 import PostCard from '../components/PostCard.jsx';
 import HeadingLogo from '../components/HeadingLogo.jsx';
 import Timeline from '../components/Timeline.jsx';
 import RegisterHere from '../components/RegisterHere.jsx';
 import FAQ from '../components/FAQ.jsx';
 import Header from '../components/Header.jsx';
+import Sponsors from '../components/Sponsors.jsx';
 
 
 export default function Home() {
@@ -19,7 +19,7 @@ export default function Home() {
           <HeadingLogo/>
         </div>
       </div>
-      <div>
+      <div className=''>
         <div className="flex justify-center items-center">
             <h3 className="font-bold mt-4 mb-4">Glimpses Of Escapade 2K23</h3>
         </div>
@@ -43,9 +43,10 @@ export default function Home() {
       </div>
       </div>
       <div id='Sponsors' className='p-12'>
-      <div className="flex justify-center items-center">
+        <div className="flex justify-center items-center">
             <h3 className="font-bold mt-4 mb-4">SPONSORS</h3>
         </div>
+        <Sponsors/>
       </div>
       <div id="FAQ's" className='p-12'> 
         <FAQ/>
