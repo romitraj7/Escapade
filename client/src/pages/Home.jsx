@@ -13,7 +13,7 @@ export default function Home() {
     <>
     <Header/>
     <div className='flex flex-col items-center'>
-      <div className='max-w-screen-xl mx-auto px-4 w-full'>
+      <div className='max-w-screen-xl  px-4 w-full'>
         <div className='flex flex-col md:flex-row justify-between items-center'>
           <HeadingLogo/>
         </div>
