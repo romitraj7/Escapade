@@ -63,7 +63,7 @@ export default function Events() {
     <div id='Prizes' className='p-16'>
     <div className="flex justify-center items-center">
             <h3 className="font-bold mt-4 mb-4">Prizes</h3>
-        </div>
+    </div>
     </div>
     <div id='Contact Us' className='p-16'>
     <div className="flex justify-center items-center">

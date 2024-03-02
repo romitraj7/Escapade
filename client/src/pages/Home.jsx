@@ -1,12 +1,11 @@
 import React from 'react';
 import CarouselComponent from '../components/CarouselComponent.jsx';
 import PostCard from '../components/PostCard.jsx';
-import HeadingLogo from '../components/HeadingLogo.jsx';
-import Timeline from '../components/Timeline.jsx';
 import RegisterHere from '../components/RegisterHere.jsx';
 import FAQ from '../components/FAQ.jsx';
 import Header from '../components/Header.jsx';
 import Sponsors from '../components/Sponsors.jsx';
+import HeadingLogo from '../components/HeadingLogo/HeadingLogo.jsx';
 
 
 export default function Home() {
