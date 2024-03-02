@@ -4,7 +4,7 @@ import EscapadeLogo from '../../images/EscapadeLogo.jpeg';
 import { Link } from "react-scroll";
 import { motion } from "framer-motion";
 import "./HeadingLogo.css";
-
+import RegisterHere from "../RegisterHere";
 const contentVariants = {
   initial: {
     translateX: "-100vw",
@@ -52,15 +52,17 @@ const HeadingLogo = () => {
           </span>
         </p>
         <Link
-          to={"portfolio"}
+          to={""}
           hashSpy={true}
           spy={true}
           smooth={true}
           delay={100}
           offset={-100}
           duration={500}
+          className="flex justify-center"
         >
           {/* Button or any other content you want to add */}
+          <RegisterHere/>
         </Link>
       </motion.div>
 
