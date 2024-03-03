@@ -1,0 +1,37 @@
+.event-details {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adding shadow effect */
+  }
+  
+  .instruction {
+    border-bottom: 1px solid #ccc; /* Adding border */
+    padding-bottom: 15px; /* Adding padding */
+  }
+  
+  .instruction:last-child {
+    border-bottom: none; /* Remove border for the last instruction */
+  }
+  
+  h3 {
+    color: #333;
+  }
+  
+  ul {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  li {
+    margin-bottom: 5px;
+  }
+  
+  @media (max-width: 600px) {
+    .event-details {
+      padding: 10px;
+    }
+  }
+  

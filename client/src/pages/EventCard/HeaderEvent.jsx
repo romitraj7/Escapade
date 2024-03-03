@@ -22,7 +22,7 @@ export default function HeaderEvent() {
      
       <NavbarContent className="sm:hidden " justify="start">
         <NavbarBrand className="mt-2 text-2xl"> 
-          <p className="font-bold mt-3">ESCAPADE</p>
+          <p className="font-bold text-black font-serif mt-4">ESCAPADE</p>
         </NavbarBrand>
       </NavbarContent>
 
@@ -32,30 +32,32 @@ export default function HeaderEvent() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="start">
         <NavbarBrand className="mt-4 text-4xl">
-          <p className="font-bold">ESCAPADE</p>
+        <a href="/" className="text-decoration-none ">
+          <p className="font-bold text-black font-serif">ESCAPADE</p>
+          </a>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="/">
+          <Link color="foreground" href="/" className="text-xl font-bold mt-3">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link href="#Rounds" aria-current="page">
+          <Link href="#Rounds" aria-current="page" className="text-xl font-bold mt-3">
             Rounds
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#Prizes">
+          <Link color="foreground" href="#Prizes" className="text-xl font-bold mt-3">
             Prizes
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#Contact Us">
+          <Link color="foreground" href="#Contact Us" className="text-xl font-bold mt-3">
            Contact Us
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#FAQ's">
+          <Link color="foreground" href="#FAQ's" className="text-xl font-bold mt-3">
             FAQ'S
           </Link>
         </NavbarItem>

@@ -1,7 +1,7 @@
 import React, { useEffect, useRef } from "react";
 import { ReactTyped } from "react-typed";
 import EscapadeLogo from '../../images/EscapadeLogo.jpeg';
-import { Link } from "react-scroll";
+import {Link} from 'react-router-dom'
 import { motion } from "framer-motion";
 import "./HeadingLogo.css";
 import RegisterHere from "../RegisterHere";
@@ -45,21 +45,21 @@ const HeadingLogo = () => {
           <ReactTyped
     startWhenVisible
     strings={[
-      "An event organised by <strong>ECE Department of MCKVIE </strong>,Where Boundaries Fade and Memories are made!",
+      "An event organised by <strong>ECE Department of MCKVIE </strong>, Where Boundaries Fade and Memories are Made!",
     ]}
     typeSpeed={50}
   />
           </span>
         </p>
         <Link
-          to={""}
+          to={'https://forms.gle/thzvBBVYLB6GTTxC8'}
           hashSpy={true}
           spy={true}
           smooth={true}
           delay={100}
           offset={-100}
           duration={500}
-          className="flex justify-center"
+          className="flex justify-center text-decoration-none"
         >
           {/* Button or any other content you want to add */}
           <RegisterHere/>

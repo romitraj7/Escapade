@@ -6,6 +6,8 @@ import FAQ from '../components/FAQ.jsx';
 import Header from '../components/Header.jsx';
 import Sponsors from '../components/Sponsors.jsx';
 import HeadingLogo from '../components/HeadingLogo/HeadingLogo.jsx';
+import { Button } from 'flowbite-react';
+import { Link } from 'react-router-dom';
 
 
 export default function Home() {
@@ -33,8 +35,11 @@ export default function Home() {
             <PostCard className="w-64 h-auto" />
           </div>
         </div>
-        <div className='flex justify-center items-center mt-3'>
+        <div className='flex flex-wrap justify-center items-center mt-3 gap-2 '>
          <RegisterHere/>
+         <Link to={'/eventdetails'} className='text-decoration-none '>
+         <Button gradientDuoTone="greenToBlue" size='lg' pill>INSTRUCTIONS</Button>
+         </Link>
         </div>
       </div>
       {/* <div id='TimeLine' className='p-12'>

@@ -4,6 +4,8 @@ import { EventCard } from './EventCard/EventCard';
 import HeaderEvent from './EventCard/HeaderEvent';
 import FAQ from '../components/FAQ';
 import RegisterHere from '../components/RegisterHere';
+import { Link } from 'react-router-dom';
+import { Button } from 'flowbite-react';
 
 export default function Events() {
   const roundRefs = [useRef(), useRef(), useRef()];
@@ -56,8 +58,11 @@ export default function Events() {
         <li>2.Teams must search and find the final clue to win the round..</li>
       </ul>}/>
       </div>
-      <div className='flex justify-center mt-4  '>
+      <div className='flex flex-wrap justify-center items-center mt-3 gap-2 '>
         <RegisterHere />
+        <Link to={'/eventdetails'} className='text-decoration-none '>
+         <Button gradientDuoTone="greenToBlue" size='lg' pill>INSTRUCTIONS</Button>
+         </Link>
       </div>
     </div>
     <div id='Prizes' className='p-16'>

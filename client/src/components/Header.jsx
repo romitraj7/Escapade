@@ -20,8 +20,8 @@ export default function Header() {
     >
      
       <NavbarContent className="sm:hidden " justify="start">
-        <NavbarBrand className="mt-2 text-2xl"> 
-          <p className="font-bold mt-3">ESCAPADE</p>
+        <NavbarBrand className="mt-2 text-3xl "> 
+          <p className="font-bold text-black font-serif mt-4">ESCAPADE</p>
         </NavbarBrand>
       </NavbarContent>
 
@@ -31,15 +31,17 @@ export default function Header() {
 
       <NavbarContent className="hidden sm:flex gap-4" justify="start">
         <NavbarBrand className="mt-4 text-4xl">
-          <p className="font-bold">ESCAPADE</p>
+          <a href="/" className="text-decoration-none ">
+          <p className="font-bold text-black font-serif">ESCAPADE</p>
+          </a>
         </NavbarBrand>
         <NavbarItem>
-          <Link color="foreground" href="/">
+          <Link color="foreground" href="/" className="text-xl font-bold mt-3">
             Home
           </Link>
         </NavbarItem>
         <NavbarItem isActive>
-          <Link href="#Events" aria-current="page">
+          <Link href="#Events" aria-current="page" className="text-xl font-bold mt-3">
             Events
           </Link>
         </NavbarItem>
@@ -49,12 +51,12 @@ export default function Header() {
           </Link>
         </NavbarItem> */}
         <NavbarItem>
-          <Link color="foreground" href="#Sponsors">
+          <Link color="foreground" href="#Sponsors" className="text-xl font-bold mt-3">
             Sponsors
           </Link>
         </NavbarItem>
         <NavbarItem>
-          <Link color="foreground" href="#FAQ's">
+          <Link color="foreground" href="#FAQ's" className="text-xl font-bold mt-3">
             FAQ'S
           </Link>
         </NavbarItem>
