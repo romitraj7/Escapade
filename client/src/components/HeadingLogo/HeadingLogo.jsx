@@ -42,13 +42,14 @@ const HeadingLogo = () => {
         <h1>ESCAPADE</h1>
         <p style={{ fontSize: "1.2rem ", fontWeight: "600" }}>
           <span style={{ marginLeft: "8px" }}>
-          <ReactTyped
-    startWhenVisible
-    strings={[
-      "An event organised by <strong>ECE Department of MCKVIE </strong>, Where Boundaries Fade and Memories are Made!",
-    ]}
-    typeSpeed={50}
-  />
+         <ReactTyped
+            className="text-black "
+            startWhenVisible
+            strings={[
+              "An event organised by <strong>ECE Department of MCKVIE </strong>, Where Boundaries Fade and Memories are Made!",
+            ]}
+            typeSpeed={50}
+          />
           </span>
         </p>
         <Link

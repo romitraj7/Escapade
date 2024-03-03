@@ -1,9 +1,10 @@
 import React from 'react';
 import './EventDetails.css'
 import EventHeader from './EventHeader';
+
 const EventDetails = () => {
   return (
-   <>
+   <div className='instruction-background'>
       <EventHeader/>   
     <div className="event-details">
       <h2 className='flex justify-center'> ESCAPADE INSTRUCTIONS :</h2>
@@ -62,7 +63,7 @@ const EventDetails = () => {
         </ul>
       </div>
     </div>
-   </>
+   </div>
   );
 };
 

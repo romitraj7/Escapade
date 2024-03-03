@@ -8,13 +8,14 @@ import Sponsors from '../components/Sponsors.jsx';
 import HeadingLogo from '../components/HeadingLogo/HeadingLogo.jsx';
 import { Button } from 'flowbite-react';
 import { Link } from 'react-router-dom';
-
+import './Home.css'
 
 export default function Home() {
   return (
     <>
-    <Header/>
-    <div className='flex flex-col items-center'>
+    <div className='home-background'>
+      <Header/>
+        <div className='flex flex-col items-center'>
       <div className='max-w-screen-xl  px-4 w-full'>
         <div className='flex flex-col md:flex-row justify-between items-center'>
           <HeadingLogo/>
@@ -55,6 +56,7 @@ export default function Home() {
       <div id="FAQ's" className='p-12'> 
         <FAQ/>
       </div>
+        </div>
       </>
   );
 }

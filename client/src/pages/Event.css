@@ -1,0 +1,28 @@
+
+.event-background {
+    background-image: url('../images/bg1.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    background-attachment: fixed; 
+    background-color: rgba(0, 0, 0, 0.5); 
+  }
+  
+  @media (max-width: 1024px) {
+    .event-background {
+      background-size: cover;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .event-background {
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        background-attachment: fixed; 
+        background-color: rgba(0, 0, 0, 0.5); 
+    }
+  }
+  

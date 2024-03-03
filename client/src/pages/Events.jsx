@@ -6,7 +6,7 @@ import FAQ from '../components/FAQ';
 import RegisterHere from '../components/RegisterHere';
 import { Link } from 'react-router-dom';
 import { Button } from 'flowbite-react';
-
+import './Event.css'
 export default function Events() {
   const roundRefs = [useRef(), useRef(), useRef()];
 
@@ -27,7 +27,7 @@ export default function Events() {
   }, []);
 
   return (
-    <>
+    <div className='event-background'>
       <HeaderEvent/>
       <div className='flex justify-center mt-4 mb-4'>
       <h1 id='Rounds' className='p-16'>Escapade Rounds</h1>
@@ -78,6 +78,6 @@ export default function Events() {
     <div id="FAQ's">
     <FAQ/>
     </div>
-    </>
+    </div>
   );
 }
