@@ -53,8 +53,19 @@ export default function Home() {
         </div>
         <Sponsors/>
       </div>
-      <div id="FAQ's" className='p-12'> 
-         <h3 className="flex justify-center font-bold mt-4 mb-4 font-luckyfarmer text-3xl md:text-5xl underline">Frequently Asked Questions?</h3>
+      <div id='Contact Us' className='p-12'>
+    <div className="flex flex-col justify-center items-center">
+            <h3 className=" mt-4 mb-4 font-feelfree text-6xl md:text-7xl underline">Contact Us</h3>
+            <div className='text-3xl'>
+              <h5 className='font-serif text-3xl mb-4'>For Any Queries Contact:- </h5>
+              <p className='font-luckyfarmer'>Anuran Chatterjee (ECE 3rd Year) :- 8240489824 </p>
+              <p className='font-luckyfarmer'>Sudhanshu Rathore (ECE 3rd Year) :- 9801201715 </p>
+              <p className='font-luckyfarmer'>Swagata Mondal (ECE 3rd Year) :- 7449950207 </p>
+            </div>
+        </div>
+    </div>
+      <div id="FAQ's" className='p-10'> 
+         <h3 className="flex justify-center font-bold mt-4 mb-4 font-luckyfarmer text-4xl md:text-5xl underline">Frequently Asked Questions?</h3>
         <FAQ/>
       </div>
         </div>

@@ -7,7 +7,7 @@ const EventDetails = () => {
    <div className='instruction-background'>
       <EventHeader/>   
     <div className="event-details">
-      <h2 className='flex justify-center'> ESCAPADE INSTRUCTIONS :</h2>
+      <h2 className='flex justify-center font-feelfree text-5xl underline'> Escapade Instructions :</h2>
       <div className="instruction">
         <h3>Identification & Tokens:</h3>
         <ul>
@@ -18,12 +18,14 @@ const EventDetails = () => {
 
       <div className="instruction">
         <h3>Team Formation:</h3>
-        <p>Form teams of two members each from any department.</p>
+        <ul>
+        <li>Form teams of two members each from any department.</li>
+        </ul>
       </div>
 
       <div className="instruction">
         <h3>Assembly Time & Venue:</h3>
-        <p>Be present and adjusted by 9:45 AM in the ECE Department.</p>
+        <li>Be present and adjusted by 9:45 AM in the ECE Department.</li>
       </div>
 
       <div className="instruction">
@@ -36,22 +38,22 @@ const EventDetails = () => {
 
       <div className="instruction">
         <h3>Organizer's Decision:</h3>
-        <p>The organizers' decisions on any matter are final.</p>
+        <li>The organizers' decisions on any matter are final.</li>
       </div>
 
       <div className="instruction">
         <h3>Fair Play:</h3>
-        <p>Strict action against participants using unfair means during exams.</p>
+        <li>Strict action against participants using unfair means during exams.</li>
       </div>
 
       <div className="instruction">
         <h3>Second Round Qualifiers:</h3>
-        <p>Refreshments provided for teams qualifying in the second round.</p>
+        <li>Refreshments provided for teams qualifying in the second round.</li>
       </div>
 
       <div className="instruction">
         <h3>Participation Fees:</h3>
-        <p>Team: ₹60 | Individual: ₹30</p>
+        <li>Team: ₹60 | Individual: ₹30</li>
       </div>
 
       <div className="instruction">

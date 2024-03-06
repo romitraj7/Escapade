@@ -9,6 +9,7 @@ export default function Header() {
     "Home",
     "Events",
     "Sponsors",
+    "Contact Us",
     "FAQ's",
   ];
     
@@ -55,6 +56,11 @@ export default function Header() {
         <NavbarItem>
           <Link color="foreground" href="#Sponsors" className="text-xl font-bold mt-3">
             Sponsors
+          </Link>
+        </NavbarItem>
+        <NavbarItem>
+          <Link color="foreground" href="#Contact Us" className="text-xl font-bold mt-3">
+            Contact Us
           </Link>
         </NavbarItem>
         <NavbarItem>
