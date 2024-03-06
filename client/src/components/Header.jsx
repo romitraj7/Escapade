@@ -67,10 +67,10 @@ export default function Header() {
 
       <NavbarMenu className="flex items-center h-50">
         {menuItems.map((item, index) => (
-          <NavbarMenuItem className="mt-3 text-2xl " key={`${item}-${index}`}>
+          <NavbarMenuItem className="mt-3 text-2xl list-none " key={`${item}-${index}`}>
             
           <Link
-              className=" border bg-indigo-300 hover:bg-indigo-700  rounded-full w-[400px] flex justify-center p-2 text-lg font-bold text-black"
+              className=" border bg-indigo-300 hover:bg-indigo-700  rounded-full w-[300px] flex justify-center p-2 text-lg font-bold text-black"
               href={(item === 'Home' ?'/': `#${item}`)}
               size="md"
             >

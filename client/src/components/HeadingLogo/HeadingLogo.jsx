@@ -5,6 +5,7 @@ import {Link} from 'react-router-dom'
 import { motion } from "framer-motion";
 import "./HeadingLogo.css";
 import RegisterHere from "../RegisterHere";
+import '../../index.css'
 const contentVariants = {
   initial: {
     translateX: "-100vw",
@@ -38,10 +39,10 @@ const HeadingLogo = () => {
         initial="initial"
         animate="animate"
       >
-        <h2>Welcome To</h2>
-        <h1>ESCAPADE</h1>
-        <p style={{ fontSize: "1.2rem ", fontWeight: "600" }}>
-          <span style={{ marginLeft: "8px" }}>
+        <h2 className="font-feelfree text-6xl">Welcome To</h2>
+        <h1 className="font-dealoras ">ESCAPADE</h1>
+        <p style={{ fontSize: "1.7rem ", fontWeight: "400"}}>
+          <span className="font-luckyfarmer  " style={{ marginLeft: "8px" }}>
          <ReactTyped
             className="text-black "
             startWhenVisible

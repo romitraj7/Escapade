@@ -1,4 +1,17 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+    font-family: 'dealoras';
+    src: url('./fonts/dealoras.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'feelfree';
+    src: url('./fonts/feelfree.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'luckyfarmer';
+    src: url('./fonts/luckyfarmer.otf');
+}

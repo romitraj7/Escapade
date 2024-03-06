@@ -8,7 +8,13 @@ export default {
     'node_modules/flowbite-react/lib/esm/**/*.js',
   ],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily:{
+        'dealoras' : ['dealoras','sans'],
+        'feelfree' : ['feelfree','serif'],
+        'luckyfarmer' : ['luckyfarmer','serif'],
+      }
+    },
   },
   plugins: [nextui(), require('flowbite/plugin'),],
 }
