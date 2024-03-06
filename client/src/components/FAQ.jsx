@@ -6,7 +6,7 @@ export default function FAQ() {
   return (
     <div className='flex flex-col justify-center items-center'>
         <div className="flex justify-center items-center">
-            <h3 className="font-bold mt-4 mb-4">Frequently Asked Questions?</h3>
+            
         </div>
         <Accordion variant="splitted" className='p-2 flex flex-col gap-1 max-w-[500px]'>
       <AccordionItem key="1" aria-label="Accordion 1" title="Question 1">

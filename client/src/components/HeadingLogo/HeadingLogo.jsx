@@ -41,7 +41,7 @@ const HeadingLogo = () => {
       >
         <h2 className="font-feelfree text-6xl">Welcome To</h2>
         <h1 className="font-dealoras ">ESCAPADE</h1>
-        <p style={{ fontSize: "1.7rem ", fontWeight: "400"}}>
+        <p style={{ fontSize: "1.6rem ", fontWeight: "400"}}>
           <span className="font-luckyfarmer  " style={{ marginLeft: "8px" }}>
          <ReactTyped
             className="text-black "

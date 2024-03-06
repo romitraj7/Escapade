@@ -21,15 +21,15 @@ export default function Home() {
           <HeadingLogo/>
         </div>
       </div>
-      <div className=''>
+      <div className='mt-4'>
         <div className="flex justify-center items-center">
-            <h3 className="font-bold mt-4 mb-4">Glimpses Of Escapade 2K23</h3>
+            <h3 className="font-bold mt-4 mb-4 font-luckyfarmer text-3xl md:text-5xl underline">Glimpses Of Escapade 2K23</h3>
         </div>
         <CarouselComponent />
       </div>
       <div id='Events' className='p-12'>
         <div className="flex justify-center items-center">
-            <h3 className="font-bold mt-4 mb-4">EVENTS</h3>
+            <h3 className="font-bold mt-4 mb-4 font-luckyfarmer text-3xl md:text-5xl underline">EVENTS</h3>
         </div>
         <div className="max-w-screen-xl mx-auto px-4 w-full">
           <div className="flex justify-center">
@@ -49,11 +49,12 @@ export default function Home() {
       </div>
       <div id='Sponsors' className='p-12'>
         <div className="flex justify-center items-center">
-            <h3 className="font-bold mt-4 mb-4">SPONSORS</h3>
+            <h3 className="font-bold mt-4 mb-4 font-luckyfarmer text-3xl md:text-5xl underline">SPONSORS</h3>
         </div>
         <Sponsors/>
       </div>
       <div id="FAQ's" className='p-12'> 
+         <h3 className="flex justify-center font-bold mt-4 mb-4 font-luckyfarmer text-3xl md:text-5xl underline">Frequently Asked Questions?</h3>
         <FAQ/>
       </div>
         </div>
