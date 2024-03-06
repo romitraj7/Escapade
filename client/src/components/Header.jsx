@@ -20,8 +20,10 @@ export default function Header() {
     >
      
       <NavbarContent className="sm:hidden " justify="start">
-        <NavbarBrand className="mt-2 text-3xl "> 
-          <p className="font-bold text-black font-serif mt-4">ESCAPADE</p>
+        <NavbarBrand className="mt-4 text-4xl "> 
+          <a href="/" className="text-decoration-none ">
+          <p className="font-bold text-black font-serif">ESCAPADE</p>
+          </a>
         </NavbarBrand>
       </NavbarContent>
 
@@ -67,10 +69,10 @@ export default function Header() {
         {menuItems.map((item, index) => (
           <NavbarMenuItem className="mt-3 text-2xl " key={`${item}-${index}`}>
             
-            <Link
-              className="w-100px "
+          <Link
+              className=" border bg-indigo-300 hover:bg-indigo-700  rounded-full w-[400px] flex justify-center p-2 text-lg font-bold text-black"
               href={(item === 'Home' ?'/': `#${item}`)}
-              size="lg"
+              size="md"
             >
               {item}
             </Link>

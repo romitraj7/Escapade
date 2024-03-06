@@ -59,7 +59,18 @@
   li {
     margin-bottom: 5px;
   }
+  @media only screen and (max-width: 768px) {
+    .event-details {
+      padding: 10px; /* Reduce padding for smaller screens */
+    }
+  }
   
+  /* Media query for extra small screens */
+  @media only screen and (max-width: 480px) {
+    .event-details {
+      max-width: 90%; /* Adjust the maximum width for smaller screens */
+    }
+  }
   @media (max-width: 600px) {
     .event-details {
       padding: 10px;

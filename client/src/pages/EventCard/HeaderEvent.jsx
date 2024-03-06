@@ -20,9 +20,11 @@ export default function HeaderEvent() {
       onMenuOpenChange={setIsMenuOpen}
     >
      
-      <NavbarContent className="sm:hidden " justify="start">
-        <NavbarBrand className="mt-2 text-2xl"> 
-          <p className="font-bold text-black font-serif mt-4">ESCAPADE</p>
+     <NavbarContent className="sm:hidden " justify="start">
+        <NavbarBrand className="mt-4 text-4xl "> 
+          <a href="/" className="text-decoration-none ">
+          <p className="font-bold text-black font-serif">ESCAPADE</p>
+          </a>
         </NavbarBrand>
       </NavbarContent>
 
@@ -66,12 +68,12 @@ export default function HeaderEvent() {
 
       <NavbarMenu className="flex items-center h-50">
         {menuItems.map((item, index) => (
-          <NavbarMenuItem className='mt-3' key={`${item}-${index}`}>
+          <NavbarMenuItem className='mt-1' key={`${item}-${index}`}>
             
             <Link
-              className="w-full"
+              className="w-full border bg-purple-300 hover:bg-purple-600 rounded-full w-[400px] flex justify-center p-2 text-lg font-bold text-black"
               href={(item === 'Home' ?'/': `#${item}`)}
-              size="lg"
+              size="md"
             >
               {item}
             </Link>
