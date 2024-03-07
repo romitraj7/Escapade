@@ -6,9 +6,10 @@ import RegisterHere from '../components/RegisterHere';
 import { Link } from 'react-router-dom';
 import { Button } from 'flowbite-react';
 import './Event.css'
-import round3 from '../images/round3.jpg'
 import FAQEvent from '../components/FAQEvent';
-
+import apti from '../images/general aptitude.png'
+import audiovisual from '../images/audio visual.png'
+import thunt from '../images/treasure hunt.png'
 
 export default function Events() {
   const roundRefs = [useRef(), useRef(), useRef()];
@@ -37,7 +38,7 @@ export default function Events() {
       </div>
       <div>
       <div id='Rounds' ref={roundRefs[0]} className='flex justify-center items-center '>
-      <EventCard  image={download} title={'Round 1 -IQ Quiz'} content={<ul>
+      <EventCard  image={apti} title={'Round 1 - Quiz'} content={<ul className=''>
         <li>Each team will be given 60 Questions to solve in the stipulated time.The questions will be a mix of aptitude and  programming.</li>
         <li>Top teams will go to the next round.</li>
         <li>In case of tie breaker the team with better time will be considered. </li>
@@ -46,7 +47,7 @@ export default function Events() {
 
 
       <div ref={roundRefs[1]} className='flex justify-center items-center'>
-      <EventCard image={download} title={'Round-2 Audio-Visual'} content={<ul>
+      <EventCard image={audiovisual} title={'Round-2 Audio-Visual'} content={<ul>
         <li>Audio-visual setup with buzzard questions.</li>
         <li>First team to press the buzzer will get the chance to answer.</li>
         <li>Correct answer will earn 5 points, but an incorrect response will result in a negative 2 points.</li>
@@ -54,7 +55,7 @@ export default function Events() {
       </div>
 
       <div ref={roundRefs[2]} className='flex justify-center items-center '>
-      <EventCard image={round3} title={'Round 3-Treasure Hunt'} content={<ul>
+      <EventCard image={thunt} title={'Round 3-Treasure Hunt'} content={<ul>
         <li>Participants will receive clues leading to the final treasure..</li>
         <li>Teams must search and find the final clue to win the round..</li>
       </ul>}/>

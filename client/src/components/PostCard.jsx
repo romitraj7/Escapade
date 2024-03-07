@@ -1,16 +1,17 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import download from '../images/download.png'
-import round3 from '../images/round3.jpg'
+import apti from '../images/general aptitude.png'
+import audiovisual from '../images/audio visual.png'
+import thunt from '../images/treasure hunt.png'
 export default function PostCard() {
   return (
     <div className='flex flex-wrap gap-2 mt-4'>
       <div className='group relative w-full border border-teal-500 hover:border-2 h-[430px] overflow-hidden rounded-lg sm:w-[400px] transition-all'>
       <Link to={`/events`}>
         <img
-          src={download}
+          src={apti}
           alt='post cover'
-          className='h-[260px] w-full  object-cover group-hover:h-[200px] transition-all duration-300 z-20'
+          className='h-[260px] w-full  object-cover group-hover:h-[200px] transition-all duration-300 z-20 rounded-full'
         />
       </Link>
       <div className='p-3 flex flex-col gap-2'>
@@ -27,9 +28,9 @@ export default function PostCard() {
       <div className='group relative w-full border border-teal-500 hover:border-2 h-[430px] overflow-hidden rounded-lg sm:w-[400px] transition-all'>
       <Link to={`/events`}>
         <img
-          src={download}
+          src={audiovisual}
           alt='post cover'
-          className='h-[260px] w-full  object-cover group-hover:h-[200px] transition-all duration-300 z-20'
+          className='h-[260px] w-full  object-cover group-hover:h-[200px] transition-all duration-300 z-20 rounded-full'
         />
       </Link>
       <div className='p-3 flex flex-col gap-2'>
@@ -46,9 +47,9 @@ export default function PostCard() {
       <div className='group relative w-full border border-teal-500 hover:border-2 h-[450px] overflow-hidden rounded-lg sm:w-[400px] transition-all'>
       <Link to={`/events`}>
         <img
-          src={round3}
+          src={thunt}
           alt='post cover'
-          className='h-[260px] w-full  object-cover group-hover:h-[200px] transition-all duration-300 z-20'
+          className='h-[260px] w-full  object-cover group-hover:h-[200px] transition-all duration-300 z-20 rounded-full'
         />
       </Link>
       <div className='p-2 flex flex-col gap-2'>
