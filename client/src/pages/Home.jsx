@@ -9,12 +9,18 @@ import HeadingLogo from '../components/HeadingLogo/HeadingLogo.jsx';
 import { Button } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import './Home.css'
+import Timer from '../components/Countdown/Timer.jsx';
 
 export default function Home() {
+  const targetDate = new Date('2024-04-01T23:59:59');
   return (
     <>
     <div className='home-background'>
       <Header/>
+     <div className='flex flex-col'>
+      <h2 className='flex justify-center font-dealoras font-extrabold underline pt-2'>Starts In:</h2>
+      <Timer targetDate={targetDate}/>
+     </div>
         <div className='flex flex-col items-center'>
       <div className='max-w-screen-xl  px-4 w-full'>
         <div className='flex flex-col md:flex-row justify-between items-center'>

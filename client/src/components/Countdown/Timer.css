@@ -1,0 +1,59 @@
+.timer-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+  }
+  
+  .timer {
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+  }
+  
+  .timer-item {
+    margin: 10px;
+    text-align: center;
+    border: 2px solid #5b199a;
+    border-radius: 8px;
+    background-color: rgba(138, 43, 226, 0.2);
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(32, 1, 62, 0.5);
+  }
+  
+  .timer-item span:first-child {
+    font-size: 40px;
+    font-weight: bold;
+  }
+  
+  .timer-item span:last-child {
+    display: block;
+    font-size: 14px;
+  }
+  
+  .timer-item:not(:last-child) {
+    position: relative;
+  }
+  
+  .timer-item:not(:last-child)::after {
+    content: ":";
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  @media (max-width: 768px) {
+    .timer-item {
+      padding: 5px 10px;
+    }
+  
+    .timer-item span:first-child {
+      font-size: 30px;
+    }
+  
+    .timer-item span:last-child {
+      font-size: 12px;
+    }
+  }
+  
