@@ -26,8 +26,4 @@
         background-color: rgba(0, 0, 0, 0.5); 
     }
   }
-  @media (max-width: 400px) {
-    .home-background {
-        background-size: contain;
-    }
-}
+  
