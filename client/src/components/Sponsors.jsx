@@ -2,20 +2,22 @@ import React from 'react';
 import Slider from 'react-slick';
 import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
-import download from '../images/download.png';
+import sponsor1 from '../images/sponsor1.jpeg';
+import sponsor2 from '../images/sponsor2.jpeg';
+import sponsor3 from '../images/sponsor3.jpeg';
 
 const Sponsors = () => {
   const settings = {
-    dots: true,
+    dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1000,
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
-    arrows: false,
+    autoplaySpeed: 3000,
+    arrows: true,
     centerMode: true,
-    centerPadding: '25%',
+    centerPadding: '9%',
     appendDots: dots => (
       <div
         style={{
@@ -35,16 +37,16 @@ const Sponsors = () => {
     <div className="relative ">
       <Slider {...settings}>
         <div>
-          <img src={download} alt="Quiz 1" className="rounded-full mx-auto sm:w-48 sm:h-48 w-32 h-32" />
-          <p className="text-center mt-2">Sponsor 1</p> {/* Add margin top */}
+          <img src={sponsor1} className="rounded-full mx-auto sm:w-48 sm:h-48 w-32 h-32" />
+          <p className="text-center mt-2 font-serif font- text-lg">S.K.Patra Clinic & Healthcare <br/> Phone:-9433988215/<br/>8240705220</p> 
         </div>
         <div>
-          <img src={download} alt="Quiz 2" className="rounded-full mx-auto sm:w-48 sm:h-48 w-32 h-32" />
-          <p className="text-center mt-2">Sponsor 2</p> {/* Add margin top */}
+          <img src={sponsor2} className="rounded-full mx-auto sm:w-48 sm:h-48 w-32 h-32" />
+          <p className="text-center mt-2 font-serif font- text-lg">Indian Meterological Department-<br/>Sukumar Roy</p>
         </div>
         <div>
-          <img src={download} alt="Quiz 3" className="rounded-full mx-auto sm:w-48 sm:h-48 w-32 h-32" />
-          <p className="text-center mt-2 mb-8 ">Sponsor 3</p> {/* Add margin top */}
+          <img src={sponsor3} className="rounded-full mx-auto sm:w-48 sm:h-48 w-32 h-32" />
+          <p className="text-center mt-2 font-serif font- text-lg">JIO</p> 
         </div>
       </Slider>
     </div>

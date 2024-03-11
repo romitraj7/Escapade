@@ -12,13 +12,13 @@ import './Home.css'
 import Timer from '../components/Countdown/Timer.jsx';
 
 export default function Home() {
-  const targetDate = new Date('2024-04-01T23:59:59');
+  const targetDate = new Date('2024-04-03T09:45:00');
   return (
     <>
     <div className='home-background'>
       <Header/>
      <div className='flex flex-col'>
-      <h2 className='flex justify-center font-dealoras font-extrabold underline pt-2'>Starts In:</h2>
+      <h2 className='flex justify-center font-serif underline pt-2'>STARTS IN:</h2>
       <Timer targetDate={targetDate}/>
      </div>
         <div className='flex flex-col items-center'>
