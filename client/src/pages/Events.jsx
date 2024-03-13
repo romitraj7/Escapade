@@ -38,7 +38,7 @@ export default function Events() {
       </div>
       <div>
       <div id='Rounds' ref={roundRefs[0]} className='flex justify-center items-center '>
-      <EventCard  image={apti} title={'Round 1 - Quiz'} content={<ul className=''>
+      <EventCard  image={apti} title={'Round 1 - Aptitude'} content={<ul className=''>
         <li>Each team will be given 60 Questions to solve in the stipulated time.The questions will be a mix of aptitude and  programming.</li>
         <li>Top teams will go to the next round.</li>
         <li>In case of tie breaker the team with better time will be considered. </li>
