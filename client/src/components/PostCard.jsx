@@ -15,7 +15,7 @@ export default function PostCard() {
         />
       </Link>
       <div className='p-3 flex flex-col gap-2'>
-        <p className='mx-auto text-3xl font-semibold line-clamp-2 font-luckyfarmer'>QUIZ</p>
+        <p className='mx-auto text-3xl font-semibold line-clamp-2 font-luckyfarmer'>APTITUDE</p>
         <span className='italic text-sm font-semibold'>Test your mental agility and problem-solving skills in a battle of wits.</span>
         <Link
           to={`/events`}
