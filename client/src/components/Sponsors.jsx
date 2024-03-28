@@ -4,7 +4,7 @@ import 'slick-carousel/slick/slick.css';
 import 'slick-carousel/slick/slick-theme.css';
 import sponsor1 from '../images/sponsor1.jpeg';
 import sponsor2 from '../images/sponsor2.jpeg';
-import sponsor3 from '../images/sponsor3.jpeg';
+// import sponsor3 from '../images/sponsor3.jpeg';
 
 const Sponsors = () => {
   const settings = {
@@ -44,10 +44,10 @@ const Sponsors = () => {
           <img src={sponsor2} className="rounded-full mx-auto sm:w-48 sm:h-48 w-32 h-32" />
           <p className="text-center mt-2 font-serif font- text-lg">Indian Meterological Department-<br/>Sukumar Roy</p>
         </div>
-        <div>
+        {/* <div>
           <img src={sponsor3} className="rounded-full mx-auto sm:w-48 sm:h-48 w-32 h-32" />
           <p className="text-center mt-2 font-serif font- text-lg">JIO</p> 
-        </div>
+        </div> */}
       </Slider>
     </div>
   );

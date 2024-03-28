@@ -10,7 +10,7 @@ import { Button } from 'flowbite-react';
 import { Link } from 'react-router-dom';
 import './Home.css'
 import Timer from '../components/Countdown/Timer.jsx';
-
+import escapade from '../images/escapade.png'
 export default function Home() {
   const targetDate = new Date('2024-04-03T09:45:00');
   return (
@@ -22,7 +22,11 @@ export default function Home() {
       <Timer targetDate={targetDate}/>
      </div>
         <div className='flex flex-col items-center'>
-      <div className='max-w-screen-xl  px-4 w-full'>
+        <div>
+          <img className='h-40 md:hidden' src={escapade}
+          />
+        </div>
+      <div className='max-w-screen-xl px-4 w-full'>
         <div className='flex flex-col md:flex-row justify-between items-center'>
           <HeadingLogo/>
         </div>
@@ -65,7 +69,6 @@ export default function Home() {
             <div className='text-3xl'>
               <h5 className='font-serif text-3xl mb-4'>For Any Queries Contact:- </h5>
               <p className='font-luckyfarmer'>Anuran Chatterjee (ECE 3rd Year) :- 8240489824 </p>
-              <p className='font-luckyfarmer'>Sudhanshu Rathore (ECE 3rd Year) :- 9801201715 </p>
               <p className='font-luckyfarmer'>Swagata Mondal (ECE 3rd Year) :- 7449950207 </p>
             </div>
         </div>

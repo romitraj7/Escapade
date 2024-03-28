@@ -81,7 +81,6 @@ export default function Events() {
             <div className='text-3xl'>
               <h5 className='font-serif text-3xl mb-4'>For Any Queries Contact:- </h5>
               <p className='font-luckyfarmer'>Anuran Chatterjee (ECE 3rd Year) :- 8240489824 </p>
-              <p className='font-luckyfarmer'>Sudhanshu Rathore (ECE 3rd Year) :- 9801201715 </p>
               <p className='font-luckyfarmer'>Swagata Mondal (ECE 3rd Year) :- 7449950207 </p>
             </div>
         </div>
